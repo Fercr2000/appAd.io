@@ -1,0 +1,122 @@
+// Custom.scss
+// sass --watch ./scss/custom.scss ./css/custom.css
+
+// Include any default variable overrides here (though functions won't be available)
+// Sobreescribimos colores
+$primary: #2b3044;
+$secondary: #404660;
+$success:    #115654;   // Para éxito, notificaciones de éxito
+$info:       #b5b7c1;    // Para información
+//$warning:    $yellow;  // Para advertencias
+$danger:     #78260B;     // Para errores, notificaciones de error
+$light:      #f8f9fa;  // Color de fondo claro
+//$dark:       $gray-dark; // Color oscuro
+$body-bg: #f4f4f4;
+
+//$body-bg:      $white;        // Color de fondo de la página
+//$body-color:   $gray-900;     // Color de texto por defecto
+//$border-color: $gray-300;     // Color de los bordes
+
+//$link-color:              $blue;           // Color para enlaces
+//$link-hover-color:        darken($blue, 15%); // Color al pasar el mouse sobre enlaces
+//$table-bg:                $gray-100;       // Fondo de tablas
+//$table-border-color:      $gray-300;       // Bordes de tablas
+//$input-border-color:      $gray-300;       // Borde de campos de formulario
+
+// Estilos para el navbar en general
+.navbar {
+  background-color: $primary; // Fondo del navbar
+  .navbar-nav {
+    .nav-link {
+      color: #fff; // Color de los enlaces
+      padding: 10px 15px;
+      &:hover {
+        //background-color: #444; // Fondo al pasar el ratón
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Aplicar estilo a todos los <a> en el sitio
+a {
+  text-decoration: none; // Quitar subrayado en todos los enlaces
+  color: inherit; // Mantener el color según el contexto (se puede ajustar si quieres un color específico)
+
+  &:hover {
+    text-decoration: none; // Sin subrayado al pasar el ratón
+    font-weight: bold;
+  }
+}
+
+// Estilos específicos para el collapse
+.collapse.navbar-collapse {
+  //justify-content: right; // Alinear los enlaces a la derecha en pantallas grandes
+  //background-color: #222; // Cambiar el fondo cuando el menú colapsa (móvil)
+
+
+  .nav-link {
+    color: #e0e0e0; // Color de los enlaces en estado colapsado
+    padding: 10px 15px;
+
+
+    &.active {
+      //background-color: #555; // Color de fondo para el enlace activo
+      color: #fff;
+    }
+
+    &:hover {
+      //background-color: #444; // Fondo al pasar el ratón en colapsado
+      //color: #fff;
+    }
+
+    &.disabled {
+      color: $danger; // Color para el enlace deshabilitado
+      //pointer-events: none; // Deshabilitar interacción
+    }
+  }
+}
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+.fondoContenido {
+  background-color: rgba(255,255,255,0.5);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.fondoContenido p {
+  font-family: 'Arial', sans-serif;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: justify;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  letter-spacing: 0.9px;
+  padding-bottom: 2px;
+  font-style: italic;
+}
+
+.fondoContenido h2 {
+  font-family: 'Arial', serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2b3044;
+  text-align: center;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 3px solid rgb(43, 48, 68);
+  padding-bottom: 5px;
+}
+
+
