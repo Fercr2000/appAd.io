@@ -271,7 +271,7 @@
     color: var(--color-text);
     background: var(--color-background);
     transition: 1s;
-    border-radius: 100px;
+    border-radius: 8px;
     box-shadow: 0 0 0.2em 0 var(--color-background);
 }
 
@@ -286,7 +286,9 @@
 
 .btn-content .icon-arrow {
     transition: 0.5s;
-    margin-right: 0px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+    margin-left: 10px;
     transform: scale(0.6);
 }
 
@@ -379,7 +381,7 @@
     color: var(--color-text);
     background: var(--color-background);
     transition: 1s;
-    border-radius: 100px;
+    border-radius: 8px;
     box-shadow: 0 0 0.2em 0 var(--color-background);
 }
 
@@ -394,7 +396,9 @@
 
 .btn-contentA .icon-arrow {
     transition: 0.5s;
-    margin-right: 0px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 1px;
     transform: scale(-0.6);
 
 }
