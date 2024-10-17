@@ -23,7 +23,7 @@ $body-bg: #f4f4f4;
 //$table-bg:                $gray-100;       // Fondo de tablas
 //$table-border-color:      $gray-300;       // Bordes de tablas
 //$input-border-color:      $gray-300;       // Borde de campos de formulario
-
+@import "../node_modules/bootstrap/scss/bootstrap";
 // Estilos para el navbar en general
 .navbar {
   background-color: $primary; // Fondo del navbar
@@ -52,9 +52,6 @@ a {
 
 // Estilos específicos para el collapse
 .collapse.navbar-collapse {
-  //justify-content: right; // Alinear los enlaces a la derecha en pantallas grandes
-  //background-color: #222; // Cambiar el fondo cuando el menú colapsa (móvil)
-
 
   .nav-link {
     color: #e0e0e0; // Color de los enlaces en estado colapsado
@@ -64,6 +61,7 @@ a {
     &.active {
       //background-color: #555; // Color de fondo para el enlace activo
       color: #fff;
+      font-weight: bold;
     }
 
     &:hover {
@@ -82,7 +80,7 @@ a {
 
 
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+
 
 // Then add additional custom code here
 
