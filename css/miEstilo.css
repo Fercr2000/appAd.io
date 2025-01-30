@@ -4,7 +4,6 @@
     .hamburger {
         height: 50px;
         width: 50px;
-
         position: relative;
     }
     .hamburger .checkbox {
@@ -13,6 +12,7 @@
         height: 100%;
         width: 100%;
         cursor: pointer;
+
     }
     .line {
         transition: 0.5s;
